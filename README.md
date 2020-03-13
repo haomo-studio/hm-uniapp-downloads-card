@@ -14,7 +14,7 @@
 
 ## 技术支持
 
-* [uni-app插件市场](https://ext.dcloud.net.cn/plugin?id=1380)
+* [uni-app插件市场](https://ext.dcloud.net.cn/plugin?id=1422)
 
 * [npm包](https://www.npmjs.com/package/hm-uniapp-downloads-card)
 
@@ -46,22 +46,27 @@ export default {
 ```html
 <template>
   <div class="test-component">
-    <hm-downloads-card></hm-downloads-card>
+    <hm-downloads-card :options="options"></hm-downloads-card>
   </div>
 </template>
 <script>
-import HmDownloadsCard from '@/components/hm-components/hm-downloads-card/index.vue'
+import HmActiveUsersCard from '@/components/hm-components/hm-downloads-card/index.vue'
 
 export default {
-  components: { HmDownloadsCard },
+  components: {
+    HmActiveUsersCard
+    },
   data() {
     return {
+      options: {
+         count: '299.674',
+          downloads: '下载量',
+          downloadImage:
+            '/static/hm-downloads-card/images/img_24402_0_0.png'
+        }
     };
   },
   methods: {
-    onClick: function(e) {
-      console.log('onClick');
-    }
   }
 };
 </script>
@@ -79,7 +84,9 @@ options对象各个属性说明如下：
 
 | 属性名        | 类型     | 默认值 | 说明                                                                       |
 |-----------   |---------|--------|----------------------------------------------------------------------------|
-| title        | String  | -      | 标题文字                                                                   |
+| downloads        | String  | -      | 标题文字                                                                   |
+| count        | Double  | -      | 下载数量                                                                   |
+| downloadImage        | String  | -      | 图片                                                                   |
 
 ## 事件说明
 
@@ -89,6 +96,6 @@ options对象各个属性说明如下：
 
 ## 更新日志
 
-### 0.0.1(2020-03-07)
+### 0.0.1(2020-03-13)
 
 * 完成第一个版本
