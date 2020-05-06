@@ -21,6 +21,8 @@
 * [npm包](https://www.npmjs.com/package/hm-uniapp-downloads-card)
 
 * [github地址](https://github.com/haomo-studio/hm-uniapp-downloads-card)
+* 
+* [gitee地址](https://gitee.com/haomo/hm-uniapp-downloads-card)
 
 毫末科技将长期迭代本组件。需要技术支持，请进钉钉群：
 
